@@ -4,7 +4,16 @@
     width="60"
     alt="My Website"
   />
-  <span>{{title}}</span>
+  <span>{{title }}</span>
+
+  <nav class="nav">
+    <div class="container">
+      <a routerLink="/home-page"> Home </a>
+      <a routerLink="/projects"> Project </a>
+  </div>
+   
+  </nav>
+
     <div class="spacer"></div>
     <a aria-label="MyLinkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/sanjaya-dhakal-a444931b8/" title="Linkedin">
       <svg id="linkedin-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -21,56 +30,13 @@
   <div class="card highlight-card card-small">
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
-      <title>Rocket Ship Smoke</title>
       <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#2C3639"/>
     </svg>
-
-    <a>
-      <h2>My Projects</h2>
-    </a>
-
   
   </div>
 
-  
 
-  <!-- Resources -->
-  <p>Here are some Webpages/Projects that i have done:</p>
-
-  <div class="card-container">
-    <a class="card" target="_blank" rel="noopener" href="https://mywebsite-sanjaya.herokuapp.com/Movies">
-      <img class = "material-icons" width="24" height="24" style="padding-right: 8px" src="assets/svg/movie.svg" fill-rule="evenodd" clip-rule="evenodd">
-      <span>Movie Website Webpage</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    
-    </a>
-    
-    <a class="card" target="_blank" rel="noopener" href="https://angular.io/cli">
-      <img class = "material-icons" width="24" height="24" style="padding-right: 8px" src="assets/svg/moviet.svg" fill-rule="evenodd" clip-rule="evenodd">
-      <span >Movie App</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://github.com/sanjaya4491/SonarArduino">
-      <img class = "material-icons" width="24" height="24" style="padding-right: 8px" src="assets/svg/sonar.svg" fill-rule="evenodd" clip-rule="evenodd">
-      <span>Sonar Project</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://github.com/sanjaya4491/votingApp">
-      <img class = "material-icons" width="28" height="28" style="padding-right: 8px" src="assets/svg/vote.svg" fill-rule="evenodd" clip-rule="evenodd">
-      <span>Voting App</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://github.com/sanjaya4491/portfolioProject">
-      <img class = "material-icons" width="24" height="24" style="padding-right: 8px" src="assets/svg/portfolio.svg" fill-rule="evenodd" clip-rule="evenodd">
-      <span>My Portfolio App</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-  </div>
-
- 
+  <router-outlet></router-outlet>
 
 
   <!-- Links -->
@@ -116,4 +82,3 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
