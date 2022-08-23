@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialsComponent } from './socials/socials.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BackgroundComponent } from './background/background.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,12 @@ import { BackgroundComponent } from './background/background.component';
     FooterComponent,
     SocialsComponent,
     NavigationComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
